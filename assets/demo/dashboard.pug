@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Simple Dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta name="layout" content="main"/>
+	
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	<link href="../css/customize-template.css" type="text/css" media="screen, projection" rel="stylesheet" />
+
+	<style>
+	</style>
+</head>
+	<body>
+		<section class="page container">
+			<div class="span8">
+				<div class="box pattern pattern-sandstone">
+					<div class="box-content box-table">
+						<table id="sample-table" class="table table-hover table-bordered tablesorter">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>Name</th>
+									<th>Refferer</th>
+									<th>Created At</th>
+								</tr>
+							</thead>
+							<tbody>
+								for event in events
+									<tr>
+										td #{event._id}
+										td #{event.name}
+										td #{event.refferer}
+										td #{event.createdAt}
+									</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
